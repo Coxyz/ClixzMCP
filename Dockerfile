@@ -11,7 +11,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Code applicatif (server.py + coxyz_reader.py)
+# Code applicatif (server.py et ses modules)
 COPY app/ ./
 
 EXPOSE 8000

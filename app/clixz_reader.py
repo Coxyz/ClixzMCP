@@ -20,7 +20,7 @@ from typing import Any
 
 import yaml
 
-DEFAULT_CONFIG_PATHS = ("/etc/clixz/config.yaml", "/etc/coxyz/config.yaml")
+DEFAULT_CONFIG_PATHS = ("/etc/clixz/config.yaml",)
 SERVICE_FILENAME = "service.yaml"
 COMPOSE_FILENAME = "compose.yaml"
 

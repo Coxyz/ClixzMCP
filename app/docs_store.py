@@ -1,4 +1,4 @@
-"""Accès aux documents de référence Coxyz (``/srv/docs``).
+"""Accès aux documents de référence de l'infrastructure (``/srv/docs``).
 
 Ces documents Markdown décrivent les **règles et conventions** de
 l'infrastructure (compose, réseau, permissions, durcissement…). Contrairement à
@@ -185,7 +185,7 @@ class DocsStore:
     def _require_writable(self, category: str | None = None) -> None:
         if not self.writable:
             raise DocsError(
-                "Écriture désactivée sur ce serveur (COXYZ_DOCS_RW absent, ou "
+                "Écriture désactivée sur ce serveur (CLIXZ_DOCS_RW absent, ou "
                 "dossier monté en lecture seule)."
             )
         if category and category in READONLY_CATEGORIES:

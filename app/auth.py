@@ -8,7 +8,7 @@ expiration) et d'en extraire un ``AccessToken`` pour la lib MCP.
 Configuration (variables d'environnement) :
   OAUTH_ISSUER          ex. https://ton-tenant.eu.auth0.com/   (avec slash final)
   OAUTH_AUDIENCE        identifiant de l'API Auth0 = ``aud`` attendu
-                        (ex. https://mcp.coxyz.fr/mcp)
+                        (ex. https://clixz.coxyz.fr/mcp)
   OAUTH_RESOURCE_URL    URL publique du serveur MCP (pour les métadonnées ;
                         def. = OAUTH_AUDIENCE)
   OAUTH_REQUIRED_SCOPES scopes requis, séparés par des espaces (optionnel)
@@ -25,7 +25,7 @@ import anyio
 import jwt
 from mcp.server.auth.provider import AccessToken, TokenVerifier
 
-logger = logging.getLogger("coxyz-mcp.auth")
+logger = logging.getLogger("clixz-mcp.auth")
 _DEBUG = os.environ.get("OAUTH_DEBUG", "").strip() not in ("", "0", "false", "False")
 
 
