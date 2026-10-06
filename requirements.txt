@@ -1,0 +1,7 @@
+# <2 : mcp 2.0 déplace FastMCP (mcp.server.fastmcp disparaît) → import cassé.
+mcp>=1.8.0,<2
+PyYAML>=6.0
+starlette>=0.37
+uvicorn>=0.30
+pyjwt[crypto]>=2.8
+cryptography>=42
